@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #00d4aa;
+  --color-bg: #0d1117;
+  --color-card: #161b22;
+  --color-border: #30363d;
+  --color-text: #e6edf3;
+  --color-text-secondary: #8b949e;
+  --color-tier1: #3fb950;
+  --color-tier2: #d29922;
+  --color-tier3: #f85149;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', 'PingFang SC', -apple-system, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+
+.tier-badge { font-weight: 600; }
+.tier-badge.tier-1 { color: var(--color-tier1); }
+.tier-badge.tier-2 { color: var(--color-tier2); }
+.tier-badge.tier-3 { color: var(--color-tier3); }
+
+.stat-card { border-left: 3px solid var(--color-primary); }
+.stat-card.tier1 { border-left-color: var(--color-tier1); }
+.stat-card.tier2 { border-left-color: var(--color-tier2); }
+.stat-card.tier3 { border-left-color: var(--color-tier3); }
